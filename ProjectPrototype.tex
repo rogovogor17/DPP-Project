@@ -2,6 +2,7 @@
 
 \usepackage{geometry} %геометрия страниц (отступы)
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref} %ссылки
+\usepackage{subcaption}
 
 %  Русский язык
 \usepackage{multirow}
@@ -28,24 +29,25 @@
     top=2cm,
     bottom=2cm,
     }
-\paragraph{Практикум цифрового производства. Весна 2025}
-\section*{Предложение проекта: \newline БЕСПИЛОТНЫЙ ЛЕТАТЕЛЬНЫЙ АППАРАТ}
+\paragraph{Практикум цифрового производства. Осень 2025}
+\section*{Предложение проекта: \newline КВАДРОКОПТЕР С АВТОНОМНОЙ ПОСАДКОЙ}
 
 \paragraph{\underline{Команда}:}
 Анатолий Рогов \href{mailto:rogov.ai@phystech.edu}{\underline{rogov.ai@phystech.edu}}, Михаил Мовсесян \href{mailto:movsesian.me@phystech.edu}{\underline{movsesian.me@phystech.edu}}
 
 \paragraph{\underline{Цель проекта}:}
-спроектировать и изготовить прототип БПЛА, способного летать в пределах 10 метров, с грузоподъёмностью не менее 200 г и временем полёта не менее 15 минут.
+Создать беспилотный летательный аппарат (квадрокоптер), способный совершать автономную посадку в заданную точку, чье положение будет определяться посредством компьютерного зрения.
 
 \paragraph{\underline{Задачи проекта}:}
 \begin{itemize}
-    \item Найти доступные на рынке электромоторы, элементы радиоаппаратуры и другие составляющие схемотехники для квадрокоптера.
-    \item Определить материалы для производства деталей.
-    \item Спроектировать корпус устройства под имеющиеся компоненты управления.
-    \item Изготовить детали и собрать прототип.
-    \item Произвести настройку устройства.
-    \item Запустить аппарат и провести серию испытаний.
-
+    \item Разработать и реализовать раму для будущего устройства.
+    \item Заказать необходимые технические комплектующие.
+    \item Собрать устройство воедино.
+    \item Произвести настройки полетного контроллера.
+    \item Провести тестирование дистанционного управления.
+    \item Изучить особенности работы и возможности библиотеки OpenCV (Python).
+    \item Применить компьютерное зрение к квадрокоптеру.
+    \item Произвести тестирование посадочного механизма.
 \end{itemize}
 
 \paragraph{\underline{Существующие аналоги}:}
@@ -57,9 +59,21 @@
     \item \href{https://www.dji.com/ru}{DJI Tello EDU} (образовательный дрон с программируемым управлением, но закрытой архитектурой).
 \end{enumerate}
 
-\paragraph{\underline{Эскиз проекта}:}
-\begin{center}
-    \includegraphics[width=0.7\textwidth]{img/drone.jpg} \\
-\end{center}
+\paragraph{\underline{Эскиз проекта}:}\
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=\linewidth]{img/drone.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.2\textwidth}
+        \includegraphics[width=\linewidth]{img/opencv.png}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.2\textwidth}
+        \includegraphics[width=\linewidth]{img/aruco.png}
+    \end{subfigure}
+\end{figure}
 
 \end{document}
