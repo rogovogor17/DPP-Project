@@ -11,6 +11,7 @@
 \usepackage[utf8]{inputenc}			% кодировка исходного текста
 \usepackage[english,russian]{babel}	% локализация и переносы
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{todonotes}
 
 % Математика
@@ -33,10 +34,13 @@
 \section*{Предложение проекта: \newline КВАДРОКОПТЕР С АВТОНОМНОЙ ПОСАДКОЙ}
 
 \paragraph{\underline{Команда}:}
-Анатолий Рогов \href{mailto:rogov.ai@phystech.edu}{\underline{rogov.ai@phystech.edu}}, Михаил Мовсесян \href{mailto:movsesian.me@phystech.edu}{\underline{movsesian.me@phystech.edu}}
+Анатолий Рогов Б01-406 \href{mailto:rogov.ai@phystech.edu}{\underline{rogov.ai@phystech.edu}}, Михаил Мовсесян Б01-403 \href{mailto:movsesian.me@phystech.edu}{\underline{movsesian.me@phystech.edu}}
 
 \paragraph{\underline{Цель проекта}:}
-Создать беспилотный летательный аппарат (квадрокоптер), способный совершать автономную посадку в заданную точку, чье положение будет определяться посредством компьютерного зрения.
+Создать беспилотный летательный аппарат (квадрокоптер), способный совершать автономную посадку в заданную область размерами 30x30 см с точностью 15 см (от центра области до центра квадрокоптера).
+
+\paragraph{\underline{Описание функционала}:}
+Время работы от одной аккумуляторной батареи - 10 минут, размер области для посадки - 30x30 см, точность посадки (от центра области до центра квадрокоптера) - 15 см, габаритные размеры квадрокоптера - 20x20 см, расстояние от точки взлета до центра области - 2 м.
 
 \paragraph{\underline{Задачи проекта}:}
 \begin{itemize}
@@ -51,12 +55,20 @@
 \end{itemize}
 
 \paragraph{\underline{Существующие аналоги}:}
-
-\textbf{Open-source проекты}
+\textbf{Open-source/DIY/Коммерческие проекты}
+\begin{wrapfigure}{r}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{../img/diy_drone.png}
+    \includegraphics[width=0.95\linewidth]{../img/airbotics.png}
+\end{wrapfigure}
 \begin{enumerate}
-    \item \href{https://px4.io}{PX4 Autopilot} (платформа для автономных БПЛА с открытым кодом).
-    \item \href{https://ardupilot.org}{ArduPilot} (аппаратно-независимая система управления).
-    \item \href{https://www.dji.com/ru}{DJI Tello EDU} (образовательный дрон с программируемым управлением, но закрытой архитектурой).
+    \item \href{https://habr.com/ru/articles/414121/}{DIY автономный дрон с управлением через интернет} \\
+    Обладает широким заявленным функционалом, в том числе описана возможность "посадки в 'точку'".
+    Однако, предъявленных результатов данного проекта не обнаружено.
+    \item \href{https://www.airoboticsdrones.com}{Airobotics TRUSTED AUTONOMOUS DRONES} \\
+    Интеллектуальная сеть дронов, подключенная к центру городского управления.
+    \item \href{https://www.dji.com/ru}{ArduPilot} \\
+    Open-source проект, предлагающий широкий спектр функций для автоматизации полетов, в том числе точную и безопасную посадку дрона в заданную точку или на площадку.
 \end{enumerate}
 
 \paragraph{\underline{Эскиз проекта}:}\
