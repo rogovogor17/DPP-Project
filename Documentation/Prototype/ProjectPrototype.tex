@@ -65,14 +65,15 @@
     \item \href{https://habr.com/ru/articles/414121/}{DIY автономный дрон с управлением через интернет} \\
     Обладает широким заявленным функционалом, в том числе описана возможность "посадки в 'точку'".
     Однако, предъявленных результатов данного проекта не обнаружено.
+
     \item \href{https://www.airoboticsdrones.com}{Airobotics TRUSTED AUTONOMOUS DRONES} \\
     Интеллектуальная сеть дронов, подключенная к центру городского управления.
+
     \item \href{https://www.dji.com/ru}{ArduPilot} \\
     Open-source проект, предлагающий широкий спектр функций для автоматизации полетов, в том числе точную и безопасную посадку дрона в заданную точку или на площадку.
 \end{enumerate}
 
 \paragraph{\underline{Эскиз проекта}:}\
-
 \begin{figure}[h]
     \centering
     \begin{subfigure}{0.4\textwidth}
@@ -85,6 +86,44 @@
     \hfill
     \begin{subfigure}{0.2\textwidth}
         \includegraphics[width=\linewidth]{../img/aruco.png}
+    \end{subfigure}
+\end{figure}
+
+\paragraph{\underline{Элементная база}:}\
+\begin{figure}[h]
+    \begin{itemize}
+        \item Рама 20x20 см - из материалов Физтех Фабрики
+        \item Бесколлекторные моторы - DYS 2306 1750KV
+        \item Стэк полётный контроллер (контроллер + регуляторы оборотов - плата питания) - Skystars F4
+        \item Аккумуляторная батарея - LiPo 3S 3000mAh
+        \item Микрокомпьютер - Raspberry Pi 3 Model A+
+        \item Модуль камеры для Raspberry Pi 3 - 5MP OV5647
+        \item Радиоприемник с пультом управления - Flysky Original FS i6 2,4 ГГц
+        \item Соединительные провода и силовой разъем питания XT60
+        \item Пропеллеры 5x4.5 - из материалов Физтех Фабрики
+    \end{itemize}
+\end{figure}
+
+\paragraph{\underline{Медиа}:}\
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.2\textwidth}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.2\textwidth}
+        \includegraphics[width=\linewidth]{../img/tg-qr-code.png}
+        \caption*{Telegram}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.2\textwidth}
+        \includegraphics[width=\linewidth]{../img/git-qr-code.png}
+        \caption*{GitHub}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{0.2\textwidth}
     \end{subfigure}
 \end{figure}
 
